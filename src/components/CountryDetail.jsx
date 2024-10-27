@@ -29,17 +29,17 @@ const CountryDetail = () => {
   } = state;
 
   return (
-    <div className="px-14">
+    <div className="px-14 dark:bg-darkBlueBackground">
       <button
         onClick={() => navigate(-1)}
-        className="text-md my-11 flex px-6 py-1 rounded-md shadow-md items-center"
+        className="text-md dark:bg-darkBlueElements text-whiteTextElements my-11 flex px-6 py-1 rounded-md shadow-md items-center"
       >
         <BiArrowBack className="pr-1" />
         Back
       </button>
 
-      <div className=" flex flex-col items-center ">
-        <div className="w-full items-center">
+      <div className=" flex flex-row items-center ">
+        <div className="w-full">
           <img className="max-w-[500px] min-w-[300px]" src={flag} alt="" />
         </div>
         <div>
